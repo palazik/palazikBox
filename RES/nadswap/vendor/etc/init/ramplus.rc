@@ -1,0 +1,13 @@
+# by @rianixia
+#respect my work and give credit when use or modified.
+    
+service init.oplus.nandswap /vendor/bin/init.oplus.nandswap.bin
+    class late_start
+    user root
+    group system
+    seclabel u:r:su:s0
+    oneshot
+
+on post-fs-data
+    start init.oplus.nandswap
+    

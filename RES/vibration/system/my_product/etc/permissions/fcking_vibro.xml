@@ -1,0 +1,9 @@
+<oplus-config>
+    <oplus-feature name="oplus.software.vibrator_qcom_lmvibrator" />
+    <oplus-feature name="oplus.software.vibrator_lmvibrator" />
+    <oplus-feature name="oplus.software.vibrator_richctap" />
+    <oplus-feature name="oplus.hardware.vibrator_oplus_v1" />
+    <oplus-feature name="oplus.hardware.vibrator_oplus_v2" />
+    <oplus-feature name="oplus.software.vibration_keyboard_convert" />
+    <oplus-feature name="oplus.hardware.vibrator_xlinear_type" />
+</oplus-config>

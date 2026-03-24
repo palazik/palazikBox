@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device name="Android">
+    <item name="none">0</item>
+    <item name="screen.on.display0">104.6</item>
+    <item name="screen.full.display0">363.45</item>
+  <array name="cpu.clusters.cores">
+      <value>4</value> <!-- cluster 0 has cpu0, cpu1, cpu2, cpu3 -->
+      <value>3</value> <!-- cluster 1 has cpu4, cpu5, cpu6 -->
+      <value>1</value> <!-- cluster 2 has cpu7 -->
+  </array>
+  <array name="cpu.core_speeds.cluster0">
+      <value>300000</value>   <!-- 300   MHz CPU speed -->
+      <value>403200</value>   <!-- 403   MHz CPU speed -->
+      <value>499200</value>   <!-- 499   MHz CPU speed -->
+      <value>595200</value>   <!-- 595   MHz CPU speed -->
+      <value>691200</value>   <!-- 691   MHz CPU speed -->
+      <value>806400</value>   <!-- 806   MHz CPU speed -->
+      <value>902400</value>   <!-- 902   MHz CPU speed -->
+      <value>998400</value>   <!-- 998   MHz CPU speed -->
+      <value>1094400</value>  <!-- 300   MHz CPU speed -->
+      <value>1209600</value>  <!-- 1094  MHz CPU speed -->
+      <value>1305600</value>  <!-- 1305  MHz CPU speed -->
+      <value>1401600</value>  <!-- 1401  MHz CPU speed -->
+      <value>1497600</value>  <!-- 1497  MHz CPU speed -->
+      <value>1612800</value>  <!-- 1612  MHz CPU speed -->
+      <value>1708800</value>  <!-- 1708  MHz CPU speed -->
+      <value>1804800</value>  <!-- 1804  MHz CPU speed -->
+  </array>
+  <array name="cpu.core_speeds.cluster1">
+      <value>710400</value>   <!-- 710   MHz CPU speed -->
+      <value>844800</value>   <!-- 844   MHz CPU speed -->
+      <value>960000</value>   <!-- 960   MHz CPU speed -->
+      <value>1075200</value>  <!-- 1075  MHz CPU speed -->
+      <value>1209600</value>  <!-- 1209  MHz CPU speed -->
+      <value>1324800</value>  <!-- 1324  MHz CPU speed -->
+      <value>1440000</value>  <!-- 1440  MHz CPU speed -->
+      <value>1555200</value>  <!-- 1555  MHz CPU speed -->
+      <value>1670400</value>  <!-- 1670  MHz CPU speed -->
+      <value>1766400</value>  <!-- 1766  MHz CPU speed -->
+      <value>1881600</value>  <!-- 1881  MHz CPU speed -->
+      <value>1996800</value>  <!-- 1996  MHz CPU speed -->
+      <value>2112000</value>  <!-- 2112  MHz CPU speed -->
+      <value>2227200</value>  <!-- 2227  MHz CPU speed -->
+      <value>2342400</value>  <!-- 2342  MHz CPU speed -->
+      <value>2419200</value>  <!-- 2419  MHz CPU speed -->
+  </array>
+
+  <array name="cpu.core_speeds.cluster2">
+      <value>844800</value>   <!-- 844   MHz CPU speed -->
+      <value>960000</value>   <!-- 960   MHz CPU speed -->
+      <value>1075200</value>  <!-- 1075  MHz CPU speed -->
+      <value>1190400</value>  <!-- 1190  MHz CPU speed -->
+      <value>1305600</value>  <!-- 1305  MHz CPU speed -->
+      <value>1420800</value>  <!-- 1420  MHz CPU speed -->
+      <value>1555200</value>  <!-- 1555  MHz CPU speed -->
+      <value>1670400</value>  <!-- 1670  MHz CPU speed -->
+      <value>1785600</value>  <!-- 1785  MHz CPU speed -->
+      <value>1900800</value>  <!-- 1900  MHz CPU speed -->
+      <value>2035200</value>  <!-- 2035  MHz CPU speed -->
+      <value>2150400</value>  <!-- 2150  MHz CPU speed -->
+      <value>2265600</value>  <!-- 2265  MHz CPU speed -->
+      <value>2380800</value>  <!-- 2380  MHz CPU speed -->
+      <value>2496000</value>  <!-- 2496  MHz CPU speed -->
+      <value>2592000</value>  <!-- 2592  MHz CPU speed -->
+      <value>2688000</value>  <!-- 2688  MHz CPU speed -->
+      <value>2764800</value>  <!-- 2764  MHz CPU speed -->
+      <value>2841600</value>  <!-- 2841  MHz CPU speed -->
+  </array>
+  <array name="cpu.core_power.cluster0">
+      <value>5</value>   <!-- ~5 mA -->
+      <value>5</value>   <!-- ~5 mA -->
+      <value>6</value>   <!-- ~6 mA -->
+      <value>6</value>   <!-- ~6 mA -->
+      <value>6</value>   <!-- ~6 mA -->
+      <value>7</value>   <!-- ~7 mA -->
+      <value>8</value>   <!-- ~8 mA -->
+      <value>9</value>   <!-- ~9 mA -->
+      <value>11</value>  <!-- ~11mA -->
+      <value>12</value>  <!-- ~12mA -->
+      <value>14</value>  <!-- ~14mA -->
+      <value>15</value>  <!-- ~15mA -->
+      <value>17</value>  <!-- ~17mA -->
+      <value>20</value>  <!-- ~20mA -->
+      <value>22</value>  <!-- ~22mA -->
+      <value>32</value>  <!-- ~32mA -->
+  </array>
+  <array name="cpu.core_power.cluster1">
+      <value>23</value>   <!-- ~23 mA -->
+      <value>30</value>   <!-- ~30 mA -->
+      <value>37</value>   <!-- ~37 mA -->
+      <value>46</value>   <!-- ~46 mA -->
+      <value>47</value>   <!-- ~47 mA -->
+      <value>61</value>   <!-- ~61 mA -->
+      <value>71</value>   <!-- ~71 mA -->
+      <value>81</value>   <!-- ~81 mA -->
+      <value>92</value>   <!-- ~92 mA -->
+      <value>101</value>  <!-- ~101mA -->
+      <value>144</value>  <!-- ~144mA -->
+      <value>154</value>  <!-- ~154mA -->
+      <value>182</value>  <!-- ~182mA -->
+      <value>213</value>  <!-- ~213mA -->
+      <value>259</value>  <!-- ~259mA -->
+      <value>266</value>  <!-- ~266mA -->
+  </array>
+  <array name="cpu.core_power.cluster2">
+      <value>41</value>   <!-- ~41 mA -->
+      <value>50</value>   <!-- ~50 mA -->
+      <value>55</value>   <!-- ~55 mA -->
+      <value>68</value>   <!-- ~68 mA -->
+      <value>74</value>   <!-- ~74 mA -->
+      <value>88</value>   <!-- ~88 mA -->
+      <value>101</value>   <!-- ~101mA -->
+      <value>120</value>   <!-- ~120mA -->
+      <value>135</value>   <!-- ~135mA -->
+      <value>151</value>   <!-- ~151mA -->
+      <value>173</value>   <!-- ~173mA -->
+      <value>201</value>   <!-- ~201mA -->
+      <value>253</value>   <!-- ~253mA -->
+      <value>287</value>   <!-- ~287mA -->
+      <value>330</value>   <!-- ~330mA -->
+      <value>386</value>   <!-- ~386mA -->
+      <value>419</value>   <!-- ~419mA -->
+      <value>449</value>   <!-- ~449mA -->
+      <value>502</value>   <!-- ~502mA -->
+  </array>
+  <item name="cpu.awake">15.68</item>
+  <item name="cpu.idle">6.5</item>
+  <array name="memory.bandwidths">
+    <value>22.7</value>
+  </array>
+  <item name="battery.capacity">5000</item>
+  <item name="wifi.controller.idle">1.4</item>
+  <item name="wifi.controller.rx">177</item>
+  <item name="wifi.controller.tx">269</item>
+  <array name="wifi.controller.tx_levels"> 
+  </array>
+  <item name="wifi.controller.voltage">3300</item>
+
+  <array name="wifi.batchedscan"> <!-- mA -->
+    <value>.0002</value> <!-- 1-8/hr -->
+    <value>.002</value>  <!-- 9-64/hr -->
+    <value>.02</value>   <!-- 65-512/hr -->
+    <value>.2</value>    <!-- 513-4,096/hr -->
+    <value>2</value>    <!-- 4097-/hr -->
+  </array>
+</device>

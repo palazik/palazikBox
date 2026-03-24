@@ -1,0 +1,26 @@
+# Author @rianixia
+# Respect my work and give credit when use or modified.
+    
+service xia.display.adaptor /vendor/bin/hw/vendor.xia.display.adaptor-V6@1.0-service
+    class late_start
+    user system
+    group system
+    # use seclabel if you dont know how to change it the file context lables to mtk_hal_light_exec
+    #seclabel u:r:init:s0
+    disabled
+    restart_period 1
+    
+# Since starting the service before boot cause issues in some devices, so mkae it run after boot completed instead
+on post-fs-data && property:persist.sys.rianixia.is-displaypanel.support=true
+    mkdir /data/addon
+	chmod 0777 /data/addon
+    mkdir /data/addon/oplus_display
+	chmod 0777 /data/addon/oplus_display
+    chown system system /data/addon/oplus_display
+    chmod 0777 /data/addon/oplus_display/oplus_brightness
+	
+on property:sys.boot_completed=1
+    start xia.display.adaptor
+    chown system system /data/addon/oplus_display/oplus_brightness
+    chmod 0777 /data/addon/oplus_display/oplus_brightness
+    

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+	<library file="/system/system_ext/framework/vendor.oplus.hardware.charger-V1-java.jar" name="vendor.oplus.hardware.charger-V1"/>
+	<library file="/system/system_ext/framework/vendor.oplus.hardware.charger-V6-java.jar" name="vendor.oplus.hardware.charger"/>
+</permissions>

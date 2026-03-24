@@ -1,0 +1,54 @@
+ColorOS 16 Face Repair / Face Unlock Porting Guide (Universal for All Models)
+
+Credits:
+
+Special thanks to TG @rianixia: Provided about 80% of the core ideas and contributions for this solution.
+
+@LazyBones (myself): Removed HAL checks, allowing the system to use face recognition without HAL.
+
+Coolapk @兰微卡鱼: Spent a large amount of time assisting with real-device testing.
+
+---------------------------------------------------------------------------------------------------------
+
+Services
+
+Download face.dex (RES/face/face.dex).
+Merge face.dex into services.jar, Rename accordingly. (If last dex in services.jar is classes4.dex, rename to classes5.dex)
+
+---------------------------------------------------------------------------------------------------------
+
+System
+
+Download system.zip (extracted at RES/face/system/).
+Extract it and add all files into their corresponding directories in the /system/system/ partition.
+
+---------------------------------------------------------------------------------------------------------
+
+Add the Permission .XML
+
+Download android.hardware.fingerprint.xml (extracted at RES/face/)
+Move it to the following path and replace the original file: /my_product/etc/permissions/
+
+---------------------------------------------------------------------------------------------------------
+
+Modify SystemUI
+
+This step requires decompiling SystemUI. Use MT Manager.
+
+Find the Class: "com.android.systemui.biometrics.AuthController"
+Locate the method inside this class: "isFaceAuthEnrolled"
+Replace the "isFaceAuthEnrolled" method with the patched one:
+
+.method public isFaceAuthEnrolled(I)Z
+    .registers 4
+
+    const-string v0, "persist.sys.oplus.isFaceEnrolled"
+    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v0
+
+    const-string v1, "1"
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v0
+
+    return v0
+.end method
